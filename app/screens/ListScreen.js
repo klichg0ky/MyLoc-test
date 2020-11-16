@@ -44,11 +44,11 @@ const ListScreen = (props) => {
       <Text style={styles.text}>Точка {selectedTrack.order_id + 1}</Text>
       <View style={styles.info}>
         <View style={styles.item}>
-          <TextContainer text={selectedTrack.latitude} />
+          <TextContainer text={selectedTrack.latitude.toFixed(4)} />
           <Text style={styles.itemText}>Широта</Text>
         </View>
         <View style={styles.item}>
-          <TextContainer text={selectedTrack.latitude} />
+          <TextContainer text={selectedTrack.latitude.toFixed(4)} />
           <Text style={styles.itemText}>Долгота</Text>
         </View>
       </View>
@@ -67,7 +67,12 @@ const ListScreen = (props) => {
       </View>
 
       <View style={styles.button}>
-        <AppButton text="Добавить еще" onPress={props.navigation.goBack} />
+        <AppButton
+          text="Добавить еще"
+          onPress={() => {
+            props.navigation.pop(2);
+          }}
+        />
       </View>
     </SafeAreaView>
   );

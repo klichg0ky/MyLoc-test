@@ -1,9 +1,15 @@
 import React, {useState, useEffect} from 'react';
-import {Image, Text, StyleSheet, View, Modal} from 'react-native';
+import {
+  Image,
+  Text,
+  StyleSheet,
+  View,
+  Modal,
+  TouchableOpacity,
+} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {Header} from '../components/Header';
 import {commonStyles} from '../styles/commonStyles';
-import {TouchableOpacity} from 'react-native-gesture-handler';
 import MapView, {Marker} from 'react-native-maps';
 import {HeadingText} from '../components/HeadingText';
 import {AppButton} from '../components/AppButton';

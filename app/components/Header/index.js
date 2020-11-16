@@ -24,16 +24,17 @@ const styles = StyleSheet.create({
   container: {
     width: '100%',
     flexDirection: 'row',
-    // paddingHorizontal: 30,
+    paddingHorizontal: 20,
     marginVertical: 30,
   },
   left: {
     flex: 2,
-    alignItems: 'flex-end',
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start',
   },
   right: {
     flex: 2,
-    alignItems: 'flex-start',
+    alignItems: 'flex-end',
   },
   center: {
     flex: 3,

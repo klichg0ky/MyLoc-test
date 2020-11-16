@@ -23,6 +23,10 @@ export const commonStyles = StyleSheet.create({
         },
         shadowRadius: 20,
       },
+      android: {
+        borderWidth: 1,
+        borderColor: '#ccc',
+      },
     }),
   },
   buttonWhite: {

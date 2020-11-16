@@ -35,7 +35,7 @@ const SendScreen = (props) => {
             <Text style={styles.text}>Широта</Text>
           </View>
           <View style={styles.item}>
-            <TextContainer text={props.route.params.latitude} />
+            <TextContainer text={props.route.params.latitude.toFixed(4)} />
           </View>
         </View>
         <View style={styles.coordinate}>
@@ -43,7 +43,7 @@ const SendScreen = (props) => {
             <Text style={styles.text}>Долгота</Text>
           </View>
           <View style={styles.item}>
-            <TextContainer text={props.route.params.longitude} />
+            <TextContainer text={props.route.params.longitude.toFixed(4)} />
           </View>
         </View>
       </View>
